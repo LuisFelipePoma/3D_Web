@@ -1,10 +1,10 @@
-import { MouseEventHandler, useEffect, useState } from 'react'
+import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { styles } from '../style'
 import { navLinks } from '../constants'
 import { menu, close } from '../assets'
 
-const Navbar = (): JSX.Element => {
+export function Navbar (): JSX.Element {
   const [active, setActive] = useState(' ')
   const [toggle, setToggle] = useState(false)
 
@@ -84,5 +84,3 @@ const Navbar = (): JSX.Element => {
     </nav>
   )
 }
-
-export default Navbar
